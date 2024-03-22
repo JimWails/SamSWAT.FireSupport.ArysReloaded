@@ -122,7 +122,7 @@ namespace SamSWAT.FireSupport.ArysReloaded.Unity
             }
         }
 
-        protected override ETranslateResult TranslateCommand(ECommand command)
+        public override ETranslateResult TranslateCommand(ECommand command)
         {
             if (command == ECommand.MumbleToggle)
             {
@@ -132,11 +132,11 @@ namespace SamSWAT.FireSupport.ArysReloaded.Unity
             return ETranslateResult.Ignore;
         }
 
-        protected override void TranslateAxes(ref float[] axes)
+        public override void TranslateAxes(ref float[] axes)
         {
         }
 
-        protected override ECursorResult ShouldLockCursor()
+        public override ECursorResult ShouldLockCursor()
         {
             return ECursorResult.Ignore;
         }

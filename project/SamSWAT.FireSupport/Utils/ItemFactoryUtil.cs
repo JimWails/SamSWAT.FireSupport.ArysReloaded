@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Aki.Reflection.Patching;
-using Aki.Reflection.Utils;
 using EFT.InventoryLogic;
+using StayInTarkov;
 
 namespace SamSWAT.FireSupport.ArysReloaded.Utils
 {
@@ -16,7 +15,7 @@ namespace SamSWAT.FireSupport.ArysReloaded.Utils
 
         static ItemFactoryUtil()
         {
-	        Type = PatchConstants.EftTypes.Single(x => x.GetMethod("FlatItemsToTree") != null);
+	        Type = StayInTarkovHelperConstants.EftTypes.Single(x => x.GetMethod("FlatItemsToTree") != null);
         }
         
         protected override MethodBase GetTargetMethod()

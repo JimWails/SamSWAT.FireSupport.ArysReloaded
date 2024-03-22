@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Aki.Reflection.Patching;
 using Comfort.Common;
 using EFT;
 using EFT.Airdrop;
@@ -9,6 +8,7 @@ using EFT.InputSystem;
 using EFT.UI.Gestures;
 using HarmonyLib;
 using SamSWAT.FireSupport.ArysReloaded.Unity;
+using StayInTarkov;
 using UnityEngine;
 
 namespace SamSWAT.FireSupport.ArysReloaded.Patches
